@@ -1,0 +1,45 @@
+// main: style.less
+
+.burg {
+  width: 36px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  &:hover {
+    //height: 30px;
+    transform: scaleY(1.1);
+  }
+  &.burg_active:hover {
+    transform: scale(1.05);
+  }
+  &__line {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    left: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    &_first {
+      top: 0;
+    }
+    &_fourth {
+      bottom: 0;
+    }
+    &_second,
+    &_third {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &_active &__line_first,
+  &_active &__line_fourth {
+    opacity: 0;
+  }
+  &_active &__line_second {
+    transform: rotate(-45deg);
+  }
+  &_active &__line_third {
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,196 @@
+<header class="header">
+  <div class="wrapper">
+    <a href="" class="header__logo-link">
+      <div class="header__logo">
+        <div class="header__logo-bigletter">ти</div>
+        <div class="header__logo-littleletter">
+          технологическая<br />
+          информация <span class="header__logo-var">по машиностроению</span>
+        </div>
+      </div></a
+    >
+    <nav class="header__nav">
+      <div class="header__menu">
+        <div class="burg">
+          <div class="burg__line burg__line_first"></div>
+          <div class="burg__line burg__line_second"></div>
+          <div class="burg__line burg__line_third"></div>
+          <div class="burg__line burg__line_fourth"></div>
+        </div>
+        <div class="header__menu-desc">Главное меню</div>
+      </div>
+      <!-- <div class="header__news"><a href="#!" class="header__news-link">Новые статьи</a></div> -->
+      <div class="header__search">
+        <input type="text" placeholder="Что хотите найти?" class="header__input" />
+        <button class="header__but search"></button>
+      </div>
+    </nav>
+    <div class="header__drop-menu">
+      <ul class="header__drop-list">
+        <li class="header__drop-item">
+          <a href="" data-link="index.html" class="header__drop-link">На главную</a>
+        </li>
+        <li class="header__drop-item">
+          <a
+            href=""
+            data-link="chapters/poluchenie_zagotovok/poluchenie_zagotovok.html"
+            class="header__drop-link"
+            >Получение заготовок</a
+          >
+        </li>
+        <li class="header__drop-item">
+          <a
+            href=""
+            data-link="chapters/regushi_instrument/regushi_instrument.html"
+            class="header__drop-link"
+            >Режущий инструмент</a
+          >
+        </li>
+        <li class="header__drop-item">
+          <a
+            href=""
+            data-link="chapters/mehanoobrabotka/mehanoobrabotka.html"
+            class="header__drop-link"
+            >Механическая обработка</a
+          >
+        </li>
+        <li class="header__drop-item">
+          <a
+            href=""
+            data-link="chapters/mehobr_oborudovanie/mehobr_oborudovanie.html"
+            class="header__drop-link"
+            >Механообрабатывающее оборудование</a
+          >
+        </li>
+        <li class="header__drop-item">
+          <a href="" data-link="chapters/materiali/materiali.html" class="header__drop-link"
+            >Материаловедение</a
+          >
+        </li>
+        <li class="header__drop-item">
+          <a
+            href=""
+            data-link="chapters/termoobrabotka/termoobrabotka.html"
+            class="header__drop-link"
+            >Термообработка</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="header__drop-search">
+      <ul class="header__drop-search-list"></ul>
+    </div>
+  </div>
+</header>
+<main class="main"></main>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__box">
+      <div class="footer__box-logo">
+        <div class="footer__logo">
+          <div class="footer__logo-bigletter">ти</div>
+          <div class="footer__logo-littleletter">
+            технологическая<br />
+            информация <span class="header__logo-var">по машиностроению</span>
+          </div>
+        </div>
+        <div class="footer__logo-desc">
+          Сайт содержит технологическую машиностроительную информацию по режущему инструменту,
+          металлообрабатывающему оборудованию, технологии механической обработки, термообработке и
+          материаловедению.
+        </div>
+      </div>
+      <div class="footer__box-nav">
+        <h2 class="footer__title">Главное меню</h2>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a
+              href=""
+              data-link="chapters/poluchenie_zagotovok/poluchenie_zagotovok.html"
+              class="footer__nav-link"
+              >Получение заготовок</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href=""
+              data-link="chapters/regushi_instrument/regushi_instrument.html"
+              class="footer__nav-link"
+              >Режущий инструмент</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href=""
+              data-link="chapters/mehanoobrabotka/mehanoobrabotka.html"
+              class="footer__nav-link"
+              >Механическая обработка</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href=""
+              data-link="chapters/mehobr_oborudovanie/mehobr_oborudovanie.html"
+              class="footer__nav-link"
+              >Механообрабатывающее оборудование</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a href="" data-link="chapters/materiali/materiali.html" class="footer__nav-link"
+              >Материаловедение</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href=""
+              data-link="chapters/termoobrabotka/termoobrabotka.html"
+              class="footer__nav-link"
+              >Термообработка</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box-mail">
+        <h2 class="footer__title">Форма обратной связи</h2>
+        <form action="" name="feedback" method="POST">
+          <input
+            type="text"
+            placeholder="Имя"
+            class="footer__mail-inp"
+            name="name"
+            required
+            minlength="2"
+            maxlength="16"
+            autocomplete="off"
+          />
+          <input
+            type="email"
+            placeholder="e-mail"
+            class="footer__mail-inp"
+            name="email"
+            required
+            autocomplete="off"
+          />
+          <textarea
+            name="feedback-text"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Сообщение"
+            class="footer__mail-message"
+            required
+            minlength="10"
+            maxlength="250"
+            autocomplete="off"
+          ></textarea>
+          <input type="submit" value="Отправить сообщение" class="footer__mail-but" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <a name="bottom"></a>
+</footer>
+
+<!-- <div class="subfooter">
+  <div class="wrapper"></div>
+</div> -->

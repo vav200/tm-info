@@ -1,0 +1,166 @@
+// main: style.less
+.footer {
+  width: 100%;
+  background: lighten(@highlight-color, 10%);
+  margin: 0 auto;
+  padding: 35px 0 25px 0;
+  position: relative;
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 100px;
+    &-logo {
+      width: 465px;
+    }
+    &-nav {
+      width: 300px;
+      text-align: left;
+    }
+    &-mail {
+      flex: 1 1 350px;
+      text-align: right;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    &-bigletter {
+      text-transform: uppercase;
+      color: darken(@main-color, 3%);
+      font-family: @titles-font;
+      font-size: 2.8rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-shadow: 2px 2px 2px darken(@highlight-color, 40%);
+    }
+    &-littleletter {
+      font-family: @titles-font;
+      font-size: 1.1rem;
+      padding: 5px 5px 3px 5px;
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 0.05em;
+      margin-left: 0px;
+      margin-bottom: 2px;
+      text-shadow: 2px 2px 2px darken(@highlight-color, 40%);
+    }
+    &-desc {
+      text-align: justify;
+      font-family: @main-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+      color: darken(@highlight-color, 50%);
+      margin-bottom: 30px;
+    }
+  }
+  &__nav {
+    margin-bottom: 25px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: @titles-font;
+    font-style: normal;
+    line-height: 1.1rem;
+    color: darken(@highlight-color, 50%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  &__nav-item {
+    padding: 8px 0;
+  }
+  &__nav-link {
+    text-transform: uppercase;
+    font-family: @main-font;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1rem;
+    color: darken(@highlight-color, 30%);
+    //color: darken(@main-color, 5%);
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: 0.1s all linear;
+    &:hover,
+    &:active,
+    &:focus {
+      color: darken(@highlight-color, 50%);
+      //text-decoration: underline;
+    }
+  }
+  &__mail-inp {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid lighten(@highlight-color, 10%);
+    padding-left: 10px;
+    font-family: @main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: darken(@highlight-color, 50%);
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__mail-message {
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border: 1px solid lighten(@highlight-color, 10%);
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: @main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: darken(@highlight-color, 50%);
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    resize: none;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__mail-but {
+    font-family: @main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    background-color: @main-color;
+    padding: 7px 9px 8px 9px;
+    border: none;
+    transition: all 0.2s linear;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken(@main-color, 10%);
+      cursor: pointer;
+    }
+  }
+}
+.subfooter {
+  width: 100%;
+  height: 100px;
+  background: @back-fon;
+}
+// .footer__mail-inp:focus {
+//   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.75);
+// }
+// .footer__mail-message:valid {
+//   border: 1px solid green;
+// }
+// .footer__mail-message:invalid {
+//   border: 1px solid red;
+// }

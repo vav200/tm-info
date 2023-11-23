@@ -1,0 +1,50 @@
+// main: style.less
+table {
+  //margin: 0 auto;
+  width: 100%;
+  color: darken(@highlight-color, 50%);
+  font-family: @main-font;
+  font-style: normal;
+  border: 1px solid @highlight-color;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  border: 1px solid @highlight-color;
+  padding: 10px;
+  background-color: lighten(@highlight-color, 25%);
+}
+td {
+  padding: 5px 5px;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  //text-align: justify;
+  border: 1px solid @highlight-color;
+}
+.data-column {
+  text-align: center;
+}
+.highlight {
+  background-color: lighten(@highlight-color, 35%);
+  text-align: center;
+}
+.tablename {
+  color: darken(@highlight-color, 50%);
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.tablewrap {
+  overflow-x: auto;
+}
